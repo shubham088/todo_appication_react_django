@@ -14,7 +14,7 @@ source django_env/bin/activate
 
 3. Install the requirements
 '''
-pip3 -r install requirements.txt
+pip3 install -r requirements.txt
 '''
 
 4. run these commands
