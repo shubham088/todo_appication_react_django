@@ -11,7 +11,7 @@ class UpdateTodoComponent extends Component{
         this.state = {
             title : "",
             description : "",
-            category : "",
+            category_name : "",
             done : "",
             id : 0,
         }
@@ -37,7 +37,7 @@ class UpdateTodoComponent extends Component{
 
     handleChangeCategory(event){
         this.setState({
-            category : event.target.value
+            category_name : event.target.value
         })
     }
 
@@ -79,7 +79,7 @@ class UpdateTodoComponent extends Component{
                 title : res['data']['title'],
                 description : res['data']['description'],
                 done : res['data']['done'],
-                category : res['data']['category_name'] 
+                category_name : res['data']['category_name'] 
             })
 
             console.log(this.state)
@@ -127,7 +127,7 @@ class UpdateTodoComponent extends Component{
                         </div>
 
                         <label style = {{ color : "black"}}>Category : 
-                            <input list="category-names" name="myCategory" value = {this.state.category}
+                            <input list="category-names" name="myCategory" value = {this.state.category_name}
                             onChange = {(event)=>this.handleChangeCategory(event)}/></label>
                             <datalist id="category-names">
                             <option value="General" />

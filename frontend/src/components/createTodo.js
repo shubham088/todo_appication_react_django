@@ -8,7 +8,7 @@ class CreateTodoComponent extends Component{
         this.state = {
             title : "",
             description : "",
-            category : "",
+            category_name : "",
             done : false,
             id : 0,
         }
@@ -34,7 +34,7 @@ class CreateTodoComponent extends Component{
 
     handleChangeCategory(event){
         this.setState({
-            category : event.target.value
+            category_name : event.target.value
         })
     }
 
@@ -101,7 +101,7 @@ class CreateTodoComponent extends Component{
                         </div>
 
                         <label style = {{ color : "black"}}>Category : 
-                            <input list="category-names" name="myCategory" value = {this.state.category}
+                            <input list="category-names" name="myCategory" value = {this.state.category_name}
                             onChange = {(event)=>this.handleChangeCategory(event)}/></label>
                             <datalist id="category-names">
                             <option value="General" />
