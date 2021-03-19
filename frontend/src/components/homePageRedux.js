@@ -85,7 +85,7 @@ class HomePageWithRedux extends React.Component{
                                 <Navbar.Toggle />
                                 <Navbar.Collapse className="justify-content-end">
                                     <Navbar.Text>
-                                        <a href="/create_todo">Create Todo</a>
+                                        <a href="/create_todo_redux">Create Todo</a>
                                     </Navbar.Text>
                                 </Navbar.Collapse>
                             </Navbar>
